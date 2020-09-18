@@ -1,0 +1,183 @@
+   /* div, iframe{
+    BORDER:1PX SOLID RED;
+  } */
+  body, html, *, iframe {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.fullscreen {
+  height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+  margin: 0 auto;
+  width: 100vw;
+  overflow: hidden;
+  xborder: 1px solid blue;
+}
+
+.icon-white {
+  filter: invert(100%) sepia(4%) saturate(15%) hue-rotate(166deg) brightness(106%) contrast(106%) drop-shadow( 0 5px 5px black);
+}
+.icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* .icon:hover,
+.icon:focus {
+  background: red;
+} */
+#scrollupmsg{
+  height: 130vh;
+  width: 100vw;
+  position: absolute;
+  left: 0, top: 0;
+  display: table;
+  background-color:rgba(0, 0, 0, 0.8);
+}
+#scrollupmsg span{
+  filter:drop-shadow( 0 5px 5px black);
+}
+#scrollupmsg .icon{
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+
+  -webkit-animation: scrollupmsg 2s ease-in-out infinite both;
+  animation: scrollupmsg 2s ease-in-out infinite both;
+}
+  @-webkit-keyframes scrollupmsg {
+  0% {
+    opacity: 0;
+    -webkit-transform:translateY(0);
+    transform:translateY(0);
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+    -webkit-transform:translateY(-50px);
+    transform:translateY(-50px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform:translateY(-50px);
+    transform:translateY(-50px);
+  }
+}
+@keyframes scrollupmsg {
+  0% {
+    opacity: 0;
+    -webkit-transform:translateY(0);
+    transform:translateY(0);
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+    -webkit-transform:translateY(-50px);
+    transform:translateY(-50px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform:translateY(-50px);
+    transform:translateY(-50px);
+  }
+}
+#rotatemsg{
+  position: fixed;
+  left: 0,
+  top: 0;
+  display:table;
+  background-color:rgba(0, 0, 0, 0.9);
+}
+
+#toosmallmsgdetect{
+  position: fixed;
+  left: 0,
+  top: 0;
+  display:table;
+  opacity:0;
+}
+
+#toosmallmsg{
+  position: fixed;
+  left: 0,
+  top: 0;
+  display:table;
+  background-color:rgba(0, 0, 0, 0.9);
+  opacity:0;
+  font-size: 14px;
+}
+#toosmallmsg .icon{
+  width: 25px;
+  height: 25px;
+  margin-bottom: 5px;
+}
+#toosmallmsg .button{
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
+}
+
+
+#toosmallmsg *{
+  opacity:0;
+}
+#toosmallmsg.displaymsg,#toosmallmsg.displaymsg *{
+  opacity:1 !important;
+}
+.dialog{
+
+}
+.dialogcontent{
+  position: relative;
+  width:1000px;
+  height:400px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+ font-weight: bold;
+ left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
+.dialogcontent *{
+  color: white;
+}
+.rotateGame iframe{
+  transform: rotate(90deg) translateY(-100%);
+  transform-origin: top left;
+  height: 100vw;
+  margin: auto;
+  width: calc(var(--vh, 1vh) * 100) !important;
+  overflow: hidden;
+  xtransition: none;
+  xborder: 5px solid yellow;
+  position: fixed;
+  top:0;
+  left:0;
+}
+#gameView{
+  display: table-cell;
+  vertical-align:
+  middle;
+  text-align:center;
+  overflow: hidden;
+  position:fixed;
+  xtransition: transform 250ms ease-in-out;
+}
+/* #gameView.animate{
+  transform: scale(1,1);
+} */

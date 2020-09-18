@@ -1,0 +1,26 @@
+RewriteEngine On
+
+
+# Some hosts may require you to use the `RewriteBase` directive.
+# If you need to use the `RewriteBase` directive, it should be the
+# absolute physical path to the directory that contains this htaccess file.
+#
+# RewriteBase /
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
+
+
+order deny,allow
+
+<Files *.txt>
+	Order deny,allow
+	Deny from all
+	Allow from 82.69.49.244
+</Files>
+<Files *.log>
+	Order deny,allow
+	Deny from all
+	Allow from 82.69.49.244
+</Files>

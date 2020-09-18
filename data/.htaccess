@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /var/www/vhosts/metrognomedash.kokodigital.co.uk/httpdocs/.htpasswdhs1
+Require valid-user
