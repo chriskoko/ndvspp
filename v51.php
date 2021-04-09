@@ -15,10 +15,10 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/slideupstyle.css?v=1" />
+<link rel="stylesheet" href="css/slideupstyle.css?v=5" />
 <style>body, html, canvas, iframe, div, span {-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}</style>
 </head>
-<body class="noselect" style="background-color: black; color: white; height:100vh; height: calc(var(--vh, 1vh) * 100); width:100vw; overflow:hidden;" id="bodyid">
+<body class="noselect" style="background-color: black; color: white; height:100vh; height: calc(var(--vh, 1vh) * 100); width:100vw; xoverflow:hidden;" id="bodyid">
 	<!-- <button id="goFS">Go fullscreen</button>
 	<script>
 	  var goFS = document.getElementById("goFS");
@@ -30,7 +30,7 @@
 
   <div id="gameContainer" style="display: table;" class="fullscreen">
     <div id="gameView" class="fullscreen" >
-    <iframe id="gameiFrame" scrolling="no" class="fullscreen" src="game/v8/index.html" frameborder="0"></iframe>
+    <iframe id="gameiFrame" scrolling="no" class="fullscreen" src="game/v51/index.html?test=1" frameborder="0"></iframe>
     <!-- <h4 id="debugdata" style="">
     </h4> -->
   </div>
@@ -142,6 +142,6 @@ $(document).ready(function () {
 
 });
 </script>
-<script src="js/slideuptostart-v4.js?v=3" crossorigin="anonymous"></script>
+<script src="js/slideuptostart-v4.js?v=6" crossorigin="anonymous"></script>
 
 </html>

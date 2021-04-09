@@ -109,7 +109,8 @@ function requireLandcape(){
     //document.body.requestFullscreen();
     //CHECK IF BROWSER BAR IS ON DISPLAY
 
-    var browserBarOnShow = (windowHeight < clientHeight);
+    //var browserBarOnShow = (windowHeight < clientHeight);
+    var browserBarOnShow = (document.documentElement.clientHeight - window.innerHeight) == 0;
 
     //alert(showMessage ? 'show' : 'hide');
     if (browserBarOnShow && !gameDisplayed && !isFacebookApp()) {
